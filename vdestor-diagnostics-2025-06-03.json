@@ -1,0 +1,669 @@
+{
+  "timestamp": "2025-06-03T13:02:30.021Z",
+  "health_score": 19.05,
+  "execution_time": 5.1120979785919,
+  "diagnostics": {
+    "system": {
+      "title": "🖥️ Информация о системе",
+      "data": {
+        "Hostname": "7375893.ru",
+        "Server IP": "79.133.183.86",
+        "Server Software": "nginx/1.18.0",
+        "Server Time": "2025-06-03 16:02:22",
+        "Timezone": "Europe/Moscow",
+        "OS": "Linux 5.15.0-140-generic",
+        "Server Load": "0.2236328125, 0.0859375, 0.01953125",
+        "Uptime": " 16:02:22 up 11 days, 17:42,  2 users,  load average: 0.22, 0.09, 0.02\n"
+      }
+    },
+    "php": {
+      "title": "🐘 PHP Конфигурация",
+      "checks": {
+        "version": {
+          "current": "8.1.2-1ubuntu2.21",
+          "required": "7.4.0",
+          "check": true
+        },
+        "memory_limit": {
+          "current": "8192M",
+          "required": "256M",
+          "check": true
+        },
+        "max_execution_time": {
+          "current": "0",
+          "required": "300",
+          "check": true
+        },
+        "post_max_size": {
+          "current": "2048M",
+          "required": "32M",
+          "check": true
+        },
+        "upload_max_filesize": {
+          "current": "2048M",
+          "required": "32M",
+          "check": true
+        },
+        "session.gc_maxlifetime": {
+          "current": "1800",
+          "required": "1440",
+          "check": true
+        },
+        "error_reporting": {
+          "current": 32767,
+          "required": "E_ALL",
+          "check": true
+        },
+        "display_errors": {
+          "current": "1",
+          "required": "0 (production)",
+          "check": true
+        }
+      },
+      "extensions": {
+        "PDO": true,
+        "PDO MySQL": true,
+        "JSON": true,
+        "cURL": true,
+        "Mbstring": true,
+        "OpenSSL": true,
+        "GD": true,
+        "Zip": true,
+        "Session": true,
+        "Redis": true,
+        "APCu": false
+      }
+    },
+    "memory": {
+      "title": "💾 Память и ресурсы",
+      "data": {
+        "Current Memory Usage": "2 MB",
+        "Peak Memory Usage": "2 MB",
+        "Memory Limit": "8192M",
+        "Memory Usage %": "0.02%",
+        "Free System Memory": "9.05 GB",
+        "Total System Memory": "61.32 GB",
+        "CPU Cores": "10\n"
+      }
+    },
+    "filesystem": {
+      "title": "📁 Файловая система",
+      "paths": {
+        "Root": {
+          "path": "/var/www/www-root/data/site/vdestor.ru/public",
+          "exists": true,
+          "readable": true,
+          "writable": true,
+          "permissions": "0755",
+          "size": "86.67 GB",
+          "status": "✅"
+        },
+        "Logs": {
+          "path": "/var/log/vdestor",
+          "exists": false,
+          "readable": false,
+          "writable": false,
+          "permissions": "N/A",
+          "size": "0 B",
+          "status": "❌"
+        },
+        "Cache": {
+          "path": "/tmp/vdestor_cache",
+          "exists": true,
+          "readable": true,
+          "writable": true,
+          "permissions": "0755",
+          "size": "439.35 KB",
+          "status": "✅"
+        },
+        "Config": {
+          "path": "/etc/vdestor/config",
+          "exists": true,
+          "readable": true,
+          "writable": false,
+          "permissions": "0750",
+          "size": "3.33 KB",
+          "status": "❌"
+        },
+        "Uploads": {
+          "path": "/var/www/www-root/data/site/vdestor.ru/public/uploads",
+          "exists": false,
+          "readable": false,
+          "writable": false,
+          "permissions": "N/A",
+          "size": "0 B",
+          "status": "❌"
+        },
+        "Assets": {
+          "path": "/var/www/www-root/data/site/vdestor.ru/public/assets/dist",
+          "exists": true,
+          "readable": true,
+          "writable": false,
+          "permissions": "0755",
+          "size": "77.56 KB",
+          "status": "❌"
+        },
+        "Sessions": {
+          "path": "/var/www/www-root/data/mod-tmp",
+          "exists": true,
+          "readable": true,
+          "writable": true,
+          "permissions": "2770",
+          "size": "0 B",
+          "status": "✅"
+        }
+      },
+      "disk": {
+        "Total Space": "442.82 GB",
+        "Used Space": "345.95 GB",
+        "Free Space": "96.87 GB",
+        "Usage %": "78.13%"
+      }
+    },
+    "database": {
+      "title": "🗄️ База данных",
+      "status": "✅ Connected",
+      "info": {
+        "Version": "8.0.42-0ubuntu0.22.04.1",
+        "Uptime": "11d 17h 42m",
+        "Active Connections": "2 / 500",
+        "Database Size": "1.38 GB",
+        "Tables Count": 43,
+        "Missing Tables": "products, users, carts, prices, stock_balances, categories, brands, series, cities, warehouses, sessions, audit_logs, application_logs, metrics, job_queue, specifications",
+        "Slow Queries": 0
+      },
+      "tables": [
+        {
+          "TABLE_NAME": "products",
+          "TABLE_ROWS": 599465,
+          "size_mb": "591.53",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "application_logs",
+          "TABLE_ROWS": 880964,
+          "size_mb": "303.92",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "product_attributes",
+          "TABLE_ROWS": 1085285,
+          "size_mb": "207.20",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "product_documents",
+          "TABLE_ROWS": 773910,
+          "size_mb": "119.14",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "product_images",
+          "TABLE_ROWS": 753087,
+          "size_mb": "90.61",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "supplier_mappings",
+          "TABLE_ROWS": 363156,
+          "size_mb": "61.69",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "product_categories",
+          "TABLE_ROWS": 591393,
+          "size_mb": "26.06",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "sessions",
+          "TABLE_ROWS": 9039,
+          "size_mb": "6.84",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "related_products",
+          "TABLE_ROWS": 42144,
+          "size_mb": "4.53",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "series",
+          "TABLE_ROWS": 4955,
+          "size_mb": "0.56",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "rate_limits",
+          "TABLE_ROWS": 1262,
+          "size_mb": "0.20",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "audit_logs",
+          "TABLE_ROWS": 461,
+          "size_mb": "0.16",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "users",
+          "TABLE_ROWS": 1,
+          "size_mb": "0.14",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "brands",
+          "TABLE_ROWS": 1038,
+          "size_mb": "0.13",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "categories",
+          "TABLE_ROWS": 251,
+          "size_mb": "0.11",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "carts",
+          "TABLE_ROWS": 1,
+          "size_mb": "0.09",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "stock_balances",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.09",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "cart_items",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.08",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "search_logs",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.08",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "delivery_schedules",
+          "TABLE_ROWS": 2,
+          "size_mb": "0.08",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "client_prices",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.08",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "stock_history",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.06",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "prices",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "metrics",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "login_attempts",
+          "TABLE_ROWS": 1,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "stock_change_log",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "job_queue",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "email_logs",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "clients_organizations",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "specification_items",
+          "TABLE_ROWS": 89,
+          "size_mb": "0.05",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "warehouses",
+          "TABLE_ROWS": 1,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "specifications",
+          "TABLE_ROWS": 95,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "user_profiles",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "roles",
+          "TABLE_ROWS": 3,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "brand_prices",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "product_metrics",
+          "TABLE_ROWS": 25,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "cache_entries",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "city_warehouse_mapping",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "cities",
+          "TABLE_ROWS": 2,
+          "size_mb": "0.03",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "app_config",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.02",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "city_working_days",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.02",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "warehouse_delivery_dates",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.02",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        },
+        {
+          "TABLE_NAME": "warehouse_delivery_days",
+          "TABLE_ROWS": 0,
+          "size_mb": "0.02",
+          "ENGINE": "InnoDB",
+          "TABLE_COLLATION": "utf8mb4_0900_ai_ci"
+        }
+      ]
+    },
+    "opensearch": {
+      "title": "🔍 OpenSearch/Elasticsearch",
+      "status": "⚠️ Warning",
+      "info": {
+        "Version": "2.10.0",
+        "Cluster Name": "my-cluster",
+        "Status": "yellow",
+        "Nodes": 1,
+        "Active Shards": 10,
+        "Indices Count": 3,
+        "Current Alias": "products_2025_06_02_21_11_02",
+        "Total Documents": 0
+      }
+    },
+    "cache": {
+      "title": "⚡ Кеш система",
+      "status": "✅ Working",
+      "stats": {
+        "enabled": true,
+        "cache_dir": "/tmp/vdestor_cache/",
+        "total_files": 68,
+        "valid_files": 2,
+        "total_size": 449890,
+        "memory_items": 0
+      }
+    },
+    "sessions": {
+      "title": "🔐 Сессии",
+      "data": {
+        "Handler": "user",
+        "Save Path": "/var/www/www-root/data/mod-tmp",
+        "GC Lifetime": "1800 seconds",
+        "Current Session ID": "89e1aa395cabfffaf0e88bcd9d1f0a3e",
+        "Session Status": "✅ Active",
+        "Sessions in DB": 8646
+      }
+    },
+    "queues": {
+      "title": "📋 Очереди задач",
+      "stats": {
+        "Queue Length": 0,
+        "By Status": [],
+        "By Type": []
+      }
+    },
+    "metrics": {
+      "title": "📊 Метрики (последние 24 часа)",
+      "summary": [],
+      "performance": {
+        "avg_page_load_time": 0,
+        "avg_api_response_time": 0,
+        "avg_db_query_time": 0,
+        "cache_hit_rate": 0
+      },
+      "errors": 0
+    },
+    "api": {
+      "title": "🌐 API Endpoints",
+      "checks": {
+        "Test API": {
+          "endpoint": "/api/test",
+          "status": "❌",
+          "http_code": 301,
+          "response_time": "0.79ms",
+          "response_preview": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently..."
+        },
+        "Search API": {
+          "endpoint": "/api/search?q=test&limit=1",
+          "status": "❌",
+          "http_code": 301,
+          "response_time": "0.68ms",
+          "response_preview": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently..."
+        },
+        "Availability API": {
+          "endpoint": "/api/availability?product_ids=1&city_id=1",
+          "status": "❌",
+          "http_code": 301,
+          "response_time": "0.33ms",
+          "response_preview": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently..."
+        },
+        "Autocomplete API": {
+          "endpoint": "/api/autocomplete?q=авт&limit=5",
+          "status": "❌",
+          "http_code": 301,
+          "response_time": "0.42ms",
+          "response_preview": "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301 Moved Permanently..."
+        }
+      }
+    },
+    "security": {
+      "title": "🔒 Безопасность",
+      "checks": {
+        "HTTPS": "✅",
+        "X-Content-Type-Options": "❌",
+        "X-Frame-Options": "❌",
+        "X-XSS-Protection": "❌",
+        "Strict-Transport-Security": "❌",
+        "Config Directory Protected": "✅"
+      },
+      "config_issues": [
+        "Configuration directory has too permissive rights: 750"
+      ]
+    },
+    "logs": {
+      "title": "📜 Логи и ошибки",
+      "files": [],
+      "last_errors": [
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:44:13"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:44:01"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:33:33"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:28:20"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:24:12"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:23:50"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 15:23:38"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 11:43:17"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 11:42:42"
+        },
+        {
+          "level": "error",
+          "message": "Ошибка рендеринга шаблона",
+          "created_at": "2025-06-03 11:40:43"
+        }
+      ]
+    },
+    "processes": {
+      "title": "⚙️ Процессы и сервисы",
+      "running": {
+        "PHP-FPM": "117",
+        "MySQL": "1",
+        "Nginx": "13",
+        "Redis": "1",
+        "Queue Workers": "0"
+      },
+      "php_processes": "root         797  0.0  0.0 242896 38544 ?        Ss   May22   0:57 php-fpm: master process (/opt/php74/etc/php-fpm.conf)\nroot     1434040  0.1  0.0 1684268 54876 ?       Ss   15:59   0:00 php-fpm: master process (/etc/php/8.1/fpm/php-fpm.conf)\nwww-data 1434041  0.0  0.0 1683804 9376 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434042  0.0  0.0 1683804 9376 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434043  0.0  0.0 1683804 9376 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434044  0.0  0.0 1683804 9376 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434045  0.0  0.0 1683804 9376 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434046  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434047  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434048  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434049  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434050  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434051  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434052  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434053  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434054  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434055  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434056  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434057  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434058  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434059  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434060  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434061  0.0  0.0 1683804 9380 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434062  0.0  0.0 1683804 9384 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434063  0.0  0.0 1683804 9384 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434064  0.0  0.0 1683804 9384 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434065  0.0  0.0 1683804 9384 ?        S    15:59   0:00 php-fpm: pool www-data\nwww-data 1434066  0.0  0.0 1684116 35912 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434067  0.0  0.0 1684116 29860 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434068  0.0  0.0 1684116 27484 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434069  0.0  0.0 1684116 20440 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434070  0.0  0.0 1684116 19840 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434071  0.0  0.0 1684116 17980 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434072  3.3  0.0 1757992 41396 ?       S    15:59   0:05 php-fpm: pool www\nwww-data 1434073  0.0  0.0 1684116 18052 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434074  0.0  0.0 1758068 25484 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434075  0.0  0.0 1684116 32072 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434076  0.0  0.0 1684116 28296 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434077  0.0  0.0 1684116 20360 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434078  0.0  0.0 1758068 21428 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434079  0.0  0.0 1684116 22924 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434080  0.0  0.0 1684116 21844 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434081  0.0  0.0 1684116 20360 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434082  0.0  0.0 1684116 19668 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434083  0.0  0.0 1684116 17884 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434084  0.0  0.0 1684116 22020 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434085  0.0  0.0 1684116 28396 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434086  0.0  0.0 1684116 20104 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434087  0.0  0.0 1684116 19492 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434088  0.0  0.0 1684116 18092 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434089  0.0  0.0 1684116 22264 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434090  0.0  0.0 1684116 20112 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434091  0.0  0.0 1684116 20116 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434092  0.0  0.0 1684116 19496 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434093  0.0  0.0 1684116 18104 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434094  0.0  0.0 1684116 22276 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434095  0.0  0.0 1684116 20116 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434096  0.0  0.0 1684116 20116 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434097  0.0  0.0 1684116 19888 ?       S    15:59   0:00 php-fpm: pool www\nwww-data 1434098  3.1  0.0 1757992 25800 ?       S    15:59   0:04 php-fpm: pool www\nwww-data 1434099  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434100  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434101  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434102  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434103  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434104  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434105  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434106  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434107  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434108  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434109  0.0  0.0 1683920 9392 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434110  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434111  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434112  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434113  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434114  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-data 1434115  0.0  0.0 1683920 9396 ?        S    15:59   0:00 php-fpm: pool www\nwww-root 1434116  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434117  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434118  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434119  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434120  0.0  0.0 1683748 11364 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434121  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434122  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434123  0.0  0.0 1683748 11364 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434124  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434125  0.0  0.0 1683748 11428 ?       S    15:59   0:00 php-fpm: pool api.vdestor.ru\nwww-root 1434126  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434127  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434128  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434129  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434130  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434131  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434132  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434133  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434134  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434135  0.0  0.0 1683860 11428 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434136  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434137  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434138  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434139  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434140  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434141  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434142  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434143  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434144  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434145  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434146  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434147  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434148  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434149  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434150  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434151  0.0  0.0 1683860 11432 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434152  0.0  0.0 1683860 11436 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434153  0.0  0.0 1683860 11436 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434154  0.0  0.0 1683860 11372 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\nwww-root 1434155  0.0  0.0 1683860 11436 ?       S    15:59   0:00 php-fpm: pool vdestor.ru\n"
+    },
+    "cron": {
+      "title": "⏰ Cron задачи",
+      "jobs": "No cron jobs or unable to read"
+    },
+    "email": {
+      "title": "📧 Email система",
+      "stats": {
+        "Emails sent (7 days)": 0,
+        "Emails opened": 0,
+        "Last sent": "Never",
+        "Mail function": "✅ Available"
+      }
+    },
+    "integrations": {
+      "title": "🔗 Интеграции",
+      "services": [
+        "None configured"
+      ]
+    }
+  }
+}
